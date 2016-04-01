@@ -4,3 +4,8 @@ body{
 div{
 	border: 1px solid chocolate;
 }
+li {
+	display: inline;
+	float: right;
+	margin-left: 2em;
+}
