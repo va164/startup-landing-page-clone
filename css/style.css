@@ -1,87 +1,83 @@
-html{
-	box-sizing: border-box; /* What is this ? */
+html {
+	box-sizing: border-box;
 }
-*, *:before, *:after { /* What is this ? */
+*, *:before, *:after {  /* NEED TO UNDERSTAND THIS BETTER */
 	box-sizing: inherit;
 }
 body{
-	background-color: LightGrey;	
+	background-color: LightGray;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1em;
-	letter-spacing: .03em;
+	font-size: 1rem;
+	letter-spacing: .03rem;
 	-webkit-font-smoothing: antialiased;
-}
 }
 div{
 	border: 1px solid chocolate;
 }
-.top-navigation{
-	background-color: #fff;
+
+.topNavigation {
+	background-color: #ffffff;
+	position: fixed;
 	width: 100%;
-	border-bottom: .0625px solid #DDD;
-	z-index: 9999999;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1em;
+	border-bottom: 1px solid #ddd;
+	z-index: 9999;
 	color: #838994;
-	letter-spacing: .03em;
-	-webkit-font-smoothing: antialiased;
 }
-.top-navigation > .content {
-	width: 60.625rem; /* does not visually match the template site */
+.content {
+	max-width: 55rem;
 	height: 4.375rem;
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 1rem;
 	box-sizing: border-box;
 }
-.top-navigation .links {
+.topNavigation .links {
 	float: right;
-	margin-top: 1.563em;
+	margin-top: 1.5rem;
+	font-size: 1.04rem;
 }
-.top-navigation .links li {
+.topNavigation li {
 	display: inline-block;
 	margin-left: 1.563rem;
 }
-.top-navigation .links .active {
+.active{
 	color: #4c5058;
 	font-weight: 500;
 }
-.top-navigation .links li:hover {
+.topNavigation .links li:hover {
 	cursor: pointer;
 	color: #333333;
 }
-.logo{
-	width: 1.625rem;
-	margin-top: 1em; /* is this good practice ? differs from solution */
+.topNavigation .logo {
+	margin-top: .8rem;
 }
 .introduction {
 	background-image: url(../images/first-background-copy.jpg);
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 45.938rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 	overflow: auto;
-	color: white;
 }
-.introduction content {
+.introduction h1 {
+	font-size: 3.125rem;
+	margin-top: 17.5rem;
+}
+.introduction h1, h3 {
+	text-align: center;
 	color: white;
-	padding: 0 1rem;
-	width: 60.625;
-	margin: 0 auto;
-	min-width: 37.5rem;
-	
+	font-weight: 300;	
 }
 .introduction .buttons {
+	color: white;
 	text-align: center;
-	/* color: white;
-	margin-top: 1.563rem;*/
-} 
+	margin-top: 1.563rem;
+}
 button {
 	width: 9.688rem;
 	background-color: #f15a29;
-	border-color: #f15a29;
-	text-shadow: none; /* use in this case ? */
+	text-shadow: none;
 	border-style: none;
-	border-radius: .25rem;
+	border-radius: 4px;
 	padding: 1rem 1.5rem;
 	color: white;
 	font-size: 1.125rem;
