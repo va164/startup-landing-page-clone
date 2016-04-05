@@ -5,14 +5,14 @@ html {
 	box-sizing: inherit;
 }
 body{
-	background-color: LightGray;
+	background-color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	letter-spacing: .03rem;
 	-webkit-font-smoothing: antialiased;
 }
 div{
-	border: 1px solid chocolate;
+	/*border: 1px solid chocolate;*/
 }
 
 .topNavigation {
@@ -24,7 +24,7 @@ div{
 	color: #838994;
 }
 .content {
-	max-width: 55rem;
+	max-width: 72rem;
 	height: 4.375rem;
 	margin: 0 auto;
 	padding: 0 1rem;
@@ -61,18 +61,23 @@ div{
 .introduction h1 {
 	font-size: 3.125rem;
 	margin-top: 17.5rem;
+	margin-bottom: -1rem;
 }
 .introduction h1, h3 {
 	text-align: center;
 	color: white;
 	font-weight: 300;	
 }
+.introduction h3{
+	font-size: 1.563rem;
+	font-weight: 100;
+}
 .introduction .buttons {
 	color: white;
 	text-align: center;
 	margin-top: 1.563rem;
 }
-button {
+.introduction button {
 	width: 9.688rem;
 	background-color: #f15a29;
 	text-shadow: none;
@@ -85,20 +90,52 @@ button {
 .cases{
 	background-color: white;
 	/* overflow: hidden; */
-	padding-bottom: 5rem;
+	padding: 6rem 0 5rem 0;
 }
 .cases .content {
 	margin-top: 7.875rem;
-	color: #1d1e21;
+	color: #1D1E21;
 	text-align: center;
+	max-width: 65rem;
+	margin: 0 auto;
+	height: 100%;
+	box-sizing: border-box;
 }
 .cases h2 {
 	font-size: 2.75rem;
 	margin: 1.625rem 0 3.125rem;
 	font-weight: 300;
 }
+.cases h3{
+	color: #1D1E21;
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0 1.875rem;
+}
 .cases .devices li {
 	float: center;
 	display: inline-block;
 	margin: 0 2rem 0 2rem;
+}
+.cases .devices {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+.social > .content{
+	background-color: white;
+	margin-top: 5rem;
+	height: 100%;
+	text-align: center;
+}
+.social .icons {
+	margin-left: -2.75rem;
+}
+.social .icons > li {
+	display: inline-block;
+	margin: 0 1rem 0 1rem;
+}
+.social span {
+	font-size: .9rem;
+	font-weight: 300;
+	color: #838994;
 }
